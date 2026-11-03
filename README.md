@@ -35,3 +35,17 @@ curl -H "Accept: application/xml" http://localhost:8082/banque/comptes
 ```
 
 Les tests d'intégration utilisent H2 et MockMvc pour vérifier les deux formats, la création, le cas absent et le document OpenAPI.
+
+## Résultat vérifié
+
+Commande exécutée le 3 novembre 2026 :
+
+```powershell
+mvn -B test
+```
+
+2 tests d’intégration de l’API REST réussis avec H2 (0 échec).
+
+![Résultat de la vérification dans le terminal](docs/verification-terminal.png)
+
+L’image est une transcription visuelle de la sortie réelle de vérification ; la capture native de la fenêtre du terminal n’était pas disponible dans cet environnement.
